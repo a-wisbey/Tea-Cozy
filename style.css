@@ -28,6 +28,15 @@ ul {
     display: inline-flex;
 }
 
+/* Change background on mouse-over */
+nav a:hover {
+    color: greenyellow;
+}
+
+nav a:active {
+    color: darkgreen;
+}
+
 .logo-img {
     margin-left: 10px;
     margin-top: 9.5px;
