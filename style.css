@@ -1,8 +1,9 @@
-body {
+* {
     font-family: Helvetica, sans-serif;
     font-size: 22px;
     color: seashell;
     background-color: black;
+    opacity: 0.9;
 }
 
 /* The navigation bar */
@@ -116,7 +117,12 @@ figure figcaption h4 {
 .locations {
     background-color: green; /* fall-back in case the image doesn't load, the user will still be abel to read the white text */
     background-image: url("./img/img-locations-background.jpg");
-    max-width: 1200px; /* for responsive design, it's best not to set specific heaight/width, that's why I'm using max- instead */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-size: cover; /* Scale the image to cover the entire container */
+    background-position: center; /* Center the background image */
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Max width for responsiveness */
+    height: 500px; 
     margin-left: auto;
     margin-right: auto;
     padding-left: 1rem;
@@ -128,17 +134,20 @@ figure figcaption h4 {
 .location-text {
     color: seashell;
     text-align: center;
+    margin-bottom: 15px;
 }
 
 .location-box-parent {
     display: flex;
     justify-content: center;
+    margin-top: 0;
 }
 
 .location-box {
     max-width: 300px;
-    padding: 40px;
+    margin: 40px;
     flex: 1 1 30%;
     margin: 10px;
     background-color: black;;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
