@@ -145,7 +145,7 @@ figure figcaption h4 {
 
 .location-box {
     max-width: 300px;
-    margin: 40px;
+    margin: 15px 40px;
     flex: 1 1 30%;
     margin: 10px;
     background-color: black;;
