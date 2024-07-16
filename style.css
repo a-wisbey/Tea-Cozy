@@ -79,16 +79,13 @@ nav a:active {
     width: 1000px;
     display: flex;
     flex-direction: column;
-    border: 1px solid orange;
 }
 
 .featured-tea-title {
     text-align: center;
-    border: 1px solid yellow;
 }
 
 .featured-tea-container {
-    border: 1px solid red;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -112,4 +109,34 @@ figure figcaption {
 
 figure figcaption h4 {
     margin: 0; /* remove default margin */
+}
+
+/* Section 3 - Locatins */
+
+.locations {
+    margin: 0 auto;
+    width: 1200px;
+    height: 500px;
+    border: 1px solid orange;
+    background-image: url("./img/img-locations-background.jpg");
+}
+
+/* .location-image-container {
+    width: 100%;
+    height: 100%;
+
+} */
+
+.location-pic {
+    width: 100%;
+    height: 100%;
+}
+
+.location-text {
+    color: seashell;
+    border: 1px solid greenyellow;
+}
+
+.location-box {
+    border: 1px solid red;
 }
