@@ -16,7 +16,6 @@ nav {
     justify-content: space-between;
 }
 
-/* Links inside the navbar */
 nav a {
     color: seashell;
     margin-right: 20px; /* add space between the links */
@@ -27,8 +26,7 @@ ul {
     display: inline-flex;
 }
 
-/* Change background on mouse-over */
-nav a:hover {
+nav a:hover { /* Change background on mouse-over */
     color: greenyellow;
 }
 
@@ -72,5 +70,39 @@ nav a:active {
     transform: translate(-50%, -50%);
     width: 1200px;
     text-align: center;
+}
+
+/* Section 2 - Feataured Tea */
+.featured-tea {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid orange;
+}
+
+.featured-tea-title {
+    text-align: center;
+    border:1px solid yellow;
+}
+
+.featured-tea-container {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0; /* does absolutely nothing */
+
+    /* add flex wrap afer height etc */
+    /* add the wrap shorthand? */
+}
+
+.featured-tea-img {
+    width:300px;
+    height: 200px;
+    margin: 0; /* does absolutely nothing */
+    padding: 0;
 }
 
