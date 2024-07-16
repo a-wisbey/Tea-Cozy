@@ -72,7 +72,7 @@ nav a:active {
     text-align: center;
 }
 
-/* Section 2 - Feataured Tea */
+/* Section 2 - Featured Tea */
 .featured-tea {
     margin-left: auto;
     margin-right: auto;
@@ -84,25 +84,32 @@ nav a:active {
 
 .featured-tea-title {
     text-align: center;
-    border:1px solid yellow;
+    border: 1px solid yellow;
 }
 
 .featured-tea-container {
     border: 1px solid red;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    text-align: center;
-    margin: 0; /* does absolutely nothing */
+    justify-content: center;
+}
 
-    /* add flex wrap afer height etc */
-    /* add the wrap shorthand? */
+.featured-tea-container figure {
+    flex: 1 1 30%; /* Make each figure take up about 30% of the container width */
+    margin: 10px; /* Add margin between figures */
+    max-width: 300px; /* Ensure the figures don't grow too large */
+    text-align: center;
 }
 
 .featured-tea-img {
-    width:300px;
-    height: 200px;
-    margin: 0; /* does absolutely nothing */
-    padding: 0;
+    width: 100%; /* Make the images take up the full width of the figure */
+    height: auto; /* Maintain aspect ratio */
 }
 
+figure figcaption {
+    margin-top: 10px; /* Add space between the image and the caption */
+}
+
+figure figcaption h4 {
+    margin: 0; /* remove default margin */
+}
