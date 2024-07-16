@@ -43,7 +43,7 @@ nav a:active {
 
 /* Main content */
 .main {
-    margin-top: 30px; /* Add a top margin to avoid content overlay */
+    padding-top: 70px; /* Add a top margin to avoid content overlay */
     opacity: 0.9;
 }
 
@@ -58,7 +58,7 @@ nav a:active {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    height: 700px;
+    height: 700px; /* keeping specific height/weight here until I figure out how to make it remain how I want it */
     width: 1200px;
 }
 
@@ -111,32 +111,34 @@ figure figcaption h4 {
     margin: 0; /* remove default margin */
 }
 
-/* Section 3 - Locatins */
+/* Section 3 - Locations */
 
 .locations {
-    margin: 0 auto;
-    width: 1200px;
-    height: 500px;
-    border: 1px solid orange;
+    background-color: green; /* fall-back in case the image doesn't load, the user will still be abel to read the white text */
     background-image: url("./img/img-locations-background.jpg");
-}
-
-/* .location-image-container {
-    width: 100%;
-    height: 100%;
-
-} */
-
-.location-pic {
-    width: 100%;
-    height: 100%;
+    max-width: 1200px; /* for responsive design, it's best not to set specific heaight/width, that's why I'm using max- instead */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .location-text {
     color: seashell;
-    border: 1px solid greenyellow;
+    text-align: center;
+}
+
+.location-box-parent {
+    display: flex;
+    justify-content: center;
 }
 
 .location-box {
-    border: 1px solid red;
+    max-width: 300px;
+    padding: 40px;
+    flex: 1 1 30%;
+    margin: 10px;
+    background-color: black;;
 }
