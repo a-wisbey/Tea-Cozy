@@ -52,25 +52,28 @@ nav a:active {
 .mission {
     display: flex; 
     align-items: center;
-}
-
-.mission-pic {
-    display: block;
+    justify-content: center; 
+    background-image: url("./img/img-mission-background.jpg");
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-size: cover; /* Scale the image to cover the entire container */
+    background-position: center; /* Center the background image */
+    max-width: 1200px; /* Max width for responsiveness */
+    height: 700px; 
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
-    height: 700px; /* keeping specific height/weight here until I figure out how to make it remain how I want it */
-    width: 1200px;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .mission-text {
     background-color: black;
+    padding: 20px;
+    width: 1200px;
+    text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 1200px;
-    text-align: center;
 }
 
 /* Section 2 - Featured Tea */
@@ -137,7 +140,24 @@ figure figcaption h4 {
     margin-bottom: 15px;
 }
 
+
 .location-box-parent {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0;
+}
+
+.location-box {
+    max-width: 300px;
+    margin: 15px;
+    flex: 1;
+    background-color: black;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid seashell;
+}
+
+/* .location-box-parent {
     display: flex;
     justify-content: center;
     margin-top: 0;
